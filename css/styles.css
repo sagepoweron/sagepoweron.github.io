@@ -66,7 +66,6 @@ h2 {
 }
 
 
-
 .rounded
 {
 	padding-left: 16px;
@@ -77,4 +76,56 @@ h2 {
 	radial-gradient(circle, #2193b0, #6dd5ed) border-box;
 	
 	border-radius: 32px;
+    display: flex;
+    justify-content: space-around;
+}
+.rounded > div
+{
+    flex: 1;
+}
+
+
+.content
+{
+    border: 2px solid darkgray;
+    border-radius: 4px;
+    background-color: lightblue;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.content > div
+{
+    padding: 5px 10px;
+    margin: 8px;
+    flex: 1;
+}
+.box
+{
+    border: 2px solid darkgray;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.center
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects
+{
+    background-color: #d2f189;
+}
+.resume
+{
+    background-color: #f1cd89;
+}
+
+footer
+{
+    margin-top: 200px;
+    background-color: antiquewhite;
+    text-align: center;
 }
