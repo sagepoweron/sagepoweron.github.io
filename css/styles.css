@@ -3,17 +3,35 @@ html
   scroll-behavior: smooth;
 }
 
-body {
+body
+{
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    color: #333;
-    background-color: #f4f4f4;
     text-align: center;
 	
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-main {
+
+nav
+{
+    margin: 8px;
+}
+
+.content
+{
+    flex-grow: 1;
+}
+.center-vertical
+{
+    justify-content: center;
+}
+
+.panel
+{
     /*max-width: 800px;*/
     /*margin: 20px 20px;*/
     /*padding: 20px;*/
@@ -37,24 +55,16 @@ main {
 {
 	background-color: lightgray;
     min-width: 200px;
-    min-height: 200px;
-    margin: 20px;
-	padding: 20px;
+    margin: 10px;
+	padding: 10px;
     display: flex;
     flex-direction: column;
 	align-items: center;
 	text-align: left;
-	border-radius: 20px;
+	border-radius: 10px;
 }
 
-.area
-{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
+
 .border
 {
     border: 1px solid #333;
@@ -64,7 +74,6 @@ main {
 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
 	align-items: center;
 }
 .row
@@ -85,10 +94,14 @@ main {
     margin: 8px;
     padding: 4px 16px;
     cursor: pointer;
+    transition: all 1s;
+    background-color: #f4f4f4;
+    color: #333;
 }
 .button:hover
 {
     background-color:darkgray;
+    color: white;
 }
 
 
@@ -97,51 +110,9 @@ main {
     width: 60px;
 }
 
-
-
-
-
-.header {
-    text-align: center;
-}
-.contactcard {
-    margin: 10px 0;
-    font-size: 14px;
-    
-}
-.contactcard a {
-    color: #007bff;
-    text-decoration: none;
-}
-.underline {
-    margin-bottom: 10px;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-}
-nav
-{
-	border: 1px solid black;
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
 ul
 {
     padding-inline-start: 0px;
-}
-
-
-.skills ul  {
-    list-style: none;
-    padding: 0;
-}
-.skills ul li {
-    display: inline-block;
-    background: #007bff;
-    color: #fff;
-    padding: 5px 10px;
-    margin: 5px 5px 5px 0;
-    border-radius: 4px;
 }
 
 
@@ -157,3 +128,79 @@ ul
         grid-template-columns: 1fr 1fr;
     }
 }
+
+
+
+.rounded
+{
+	padding: 8px;
+	border: 1px solid #333;
+}
+
+
+iframe {
+	min-width: 800px;
+	min-height: 450px;
+	margin: 0 auto;
+	display: block;
+	background-color: lightgray;
+	border: 1px solid #333;
+	text-align: center;
+	/*background-image: url("images/farm/farming.gif");*/
+}
+
+.important
+{
+	font-size: 120%;
+	color: red;
+}
+.special
+{
+	font-size: 120%;
+	color: lightblue;
+}
+
+
+
+
+.gallery {
+	/*display: grid;
+	grid-template-columns: 1fr 1fr 1fr;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: whitesmoke;
+	border: 1px solid silver;
+	border-radius: 16px;
+	padding: 8px;
+}
+.gallery figure
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 8px;
+	padding: 8px;
+	border-radius: 16px;
+	border: 1px solid silver;
+	background-color: white;
+	/*transition: background-color 1s, transform 1s;*/
+}
+/*.gallery figure:hover
+{
+	background-color: lightgray;
+	transform: scale(1.25);
+}*/
+/*div.gallery figcaption
+{
+}*/
+.gallery figure img
+{
+	max-width: 200px;
+	/*border-radius: 20px;*/
+	/*transition: transform 1s;*/
+}
+/*div.gallery figure img:hover
+{
+	transform: scale(2);
+}*/
