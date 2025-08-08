@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/styles.css">
-        <title>Paint</title>
+        <script src="../javascript/demos.js" defer></script>
+        <title>Demos</title>
     </head>
 
     <body>
-        <div class="column">
-            <nav class="rounded">
+        <nav class="column">
+            <div class="rounded">
                 <a class="button" href="../index.html">Home</a>
                 <a class="button" href="./projects.html">Projects</a>
                 <a class="button" href="./demos.html">Demos</a>
@@ -19,20 +20,16 @@
                 <a class="button" href="./zelda.html">Zelda</a>
                 <a class="button" href="./rpg.html">RPG</a>
                 <a class="button" href="./other.html">Other</a>
-            </nav>
-        </div>
-
-        <main class="content column">
-            <h1>Paint</h1>
-            <div>
-                <iframe id="game" frameborder="0" scrolling="no" allowfullscreen></iframe>
             </div>
+        </nav>
+
+        <main class="column content">
             <div>
-                <button class="button" onClick="document.getElementById('game').src = 'https://sagepoweron.github.io/paint-demo/'">Click to Paint</button>
+                <h1 class="underline">Demos</h1>
+                <ul id="demos" class="grid"></ul>
             </div>
         </main>
 
         <footer class="dark">Thanks for visiting!</footer>
-
     </body>
 </html>

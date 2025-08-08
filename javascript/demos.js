@@ -1,7 +1,7 @@
 const username = 'sagepoweron';
-const reposList = document.getElementById("repos");
+const demosList = document.getElementById("demos");
 
-function getRepos()
+function getDemos()
 {
     fetch(`https://api.github.com/users/${username}/repos`)
     .then(response => {
@@ -17,11 +17,11 @@ function getRepos()
         {
             const element = data[index];
 
-            if (element.description === "Demo") continue;
+            if (element.description !== "Demo") continue;
 
             const container = document.createElement("div");
             container.classList.add("card");
-            reposList.append(container);
+            demosList.append(container);
             
             const name = document.createElement("h3");
             name.innerText = `${capitalizeFirstLetter(element.name)}` ;
@@ -31,15 +31,6 @@ function getRepos()
             link.innerText = element.html_url;
             link.href = element.html_url;
             container.append(link);
-
-            if (element.description !== null)
-            {
-                const description = document.createElement("p");
-                description.innerText = element.description;
-                container.append(description);
-            }
-
-            
         }
     })
     .catch(error => {
@@ -47,7 +38,7 @@ function getRepos()
     });
 }
 
-getRepos();
+getDemos();
 
 function capitalizeFirstLetter(str)
 {
