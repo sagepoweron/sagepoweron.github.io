@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/cube.css">
         <title>Profile</title>
     </head>
 
@@ -23,13 +24,26 @@
         </nav>
         
 
-        <main class="content column center-vertical">
+        <main class="column">
+
+            <div class="cubeContainer">
+                <div class="cube">
+                    <div class="front center"><h2 class="dark panel">.NET Framework</h2></div>
+                    <div class="back center"><h2 class="dark panel">React TS</h2></div>
+                    <div class="right center"><h2 class="panel">C#</h2></div>
+                    <div class="left center"><h2 class="panel">JavaScript</h2></div>
+                    <div class="bottom"></div>
+                    <div class="imageBottom"><img class="pixelated" src="images/sheep.png" alt="Image"></img></div>
+                    
+                </div>
+            </div>
+
 
             <div>
-                <h1 class="dark">Jonathan Tate</h1>
-                <h2>Software Developer</h2>
-                <div>
-                    <div><img src="images/github-mark.png" class="imageSmall"></div>
+                <h1 class="dark panel">Jonathan Tate</h1>
+                <h2 class="panel">Full Stack Developer</h2>
+                <div class="column panel">
+                    <img src="images/github-mark.png" class="imageSmall"></img>
                     <a href="https://github.com/sagepoweron" class="button">GitHub &rarr;</a>
                 </div>
             </div>
