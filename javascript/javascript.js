@@ -10,13 +10,14 @@ function LoadImages(images, containerId)
     const container = document.getElementById(containerId);
     images.map(src =>
     {
-        const figure = document.createElement('figure');
+        /*const figure = document.createElement('figure');*/
 
         const img = document.createElement('img');
         img.src = src;
 
-        figure.appendChild(img);
-        container.appendChild(figure);
+        /*figure.appendChild(img);
+        container.appendChild(figure);*/
+        container.appendChild(img);
     });
 
     /*for (let index = 0; index < images.length; index++)
