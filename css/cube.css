@@ -60,9 +60,9 @@
 .bottom
 {
     transform: translateY(160px) rotateX(90deg);
-    border: #222 solid 1px;
+    border: #4a7c2c solid 2px;
     border-radius: 160px;
-    background-color: lightgreen;
+    background: linear-gradient(135deg, #7fb069 0%, #5a9b3b 100%);
 }
 
 

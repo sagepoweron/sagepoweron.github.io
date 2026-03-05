@@ -2,7 +2,6 @@ html
 {
   scroll-behavior: smooth;
 }
-
 body
 {
     font-family: Arial, sans-serif;
@@ -10,36 +9,56 @@ body
     margin: 0;
     padding: 0;
     text-align: center;
-	
+
+    min-height: 800px;
+
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: antiquewhite;
+}
+
+
+
+main
+{
+    margin: 10px;
+    padding: 10px;
+
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    align-items: center;
+    /*background-color: #333;*/
+    /*color: white;*/
 }
 
 nav
 {
-    margin: 8px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*background-color: #333;*/
+    /*color: white;*/
 }
-
-main
-{
-    flex-grow: 1;
-}
-
 footer
 {
-    margin-top: 100px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .panel
 {
-    /*max-width: 800px;*/
-    /*margin: 20px 20px;*/
-    /*padding: 20px;*/
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 8px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+
+    background-color: ghostwhite;
 }
 
 .dark
