@@ -31,3 +31,15 @@ function LoadImages(images, containerId)
 //window.onclick = () => alert('Welcome!');
 
 //$("#iframe").contents().find("canvas").css('cursor', 'default');
+
+const images =
+[
+    "../images/farm/building.gif",
+    "../images/farm/buildingWithCursor.gif"
+];
+
+window.addEventListener("load", (event) =>
+    {
+        LoadImages(images, "building");
+    }
+);
