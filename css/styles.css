@@ -90,17 +90,13 @@ a:hover
 
 .button
 {
-    border: solid 1px #333;
+    margin: 8px;
+    padding: 8px;
     text-decoration: none;
     display: inline-block;
-    margin: 8px;
-    padding: 4px 16px;
+    
     cursor: pointer;
     transition: all 1s;
-    /*background-color: #cccccc;
-    color: #333;*/
-    background-color: #0167FF;
-    color:white;
 }
 .button:hover
 {
@@ -269,6 +265,12 @@ footer
     background-color: ghostwhite;
     color:#333;
     border-radius: 8px;
+    border: 1px solid lightgray;
+}
+.button
+{
+    color: white;
+    background-color: #333;
     border: 1px solid lightgray;
 }
 .dark
