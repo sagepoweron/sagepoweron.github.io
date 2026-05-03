@@ -8,24 +8,17 @@ body
     line-height: 1.6;*/
     margin: 0;
     padding: 0;
-    text-align: center;
-
     min-height: 100vh;
-
+    text-align: center;
     display:flex;
     flex-direction: column;
     justify-content: space-between;
-    /*background-color: antiquewhite;*/
 }
-
-
-
 main
 {
     margin: 8px;
     padding: 8px;
 }
-
 nav
 {
     padding: 8px;
@@ -55,21 +48,19 @@ a:hover
 {
     margin: 8px;
     padding: 8px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card
 {
-	background-color:rgb(235, 235, 235);
     min-width: 200px;
-    margin: 10px;
-	padding: 10px;
+    margin: 8px;
+	padding: 8px;
     display: flex;
     flex-direction: column;
 	align-items: center;
 	text-align: left;
-    border:#333 solid 1px;
-	border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .column
@@ -94,7 +85,6 @@ a:hover
     padding: 8px;
     text-decoration: none;
     display: inline-block;
-    
     cursor: pointer;
     transition: all 1s;
 }
@@ -254,18 +244,26 @@ ul
 /*Colors*/
 nav
 {
+    background-color: steelblue;
     border-bottom: 1px solid lightgray;
 }
 footer
 {
+    background-color: steelblue;
     border-top: 1px solid lightgray;
 }
 .panel
 {
     background-color: ghostwhite;
     color:#333;
-    border-radius: 8px;
     border: 1px solid lightgray;
+    border-radius: 8px;
+}
+.card
+{
+    background-color:ghostwhite;
+    border:#333 solid 1px;
+	border-radius: 8px;
 }
 .button
 {
