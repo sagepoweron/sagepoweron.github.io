@@ -20,7 +20,7 @@ function getRepos()
             if (element.description === "Demo") continue;
 
             const container = document.createElement("div");
-            container.classList.add("card");
+            container.classList.add("panel");
             reposList.append(container);
             
             const name = document.createElement("h3");
@@ -28,7 +28,7 @@ function getRepos()
             container.append(name);
 
             const link = document.createElement("a");
-            link.innerText = element.html_url;
+            link.innerText = "GitHub Repository";
             link.href = element.html_url;
             container.append(link);
 
