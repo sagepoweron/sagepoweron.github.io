@@ -112,7 +112,17 @@ ul
         grid-template-columns: 1fr 1fr;
     }
 }
-
+iframe
+{
+    width: 400px;
+    height: 400px;
+    margin: 8px;
+    background-color: lightgray;
+    border: 1px solid #333;
+    border-radius: 16px;
+    overflow: hidden;
+    /*background-image: url("images/farm/farming.gif");*/
+}
 
 
 .images

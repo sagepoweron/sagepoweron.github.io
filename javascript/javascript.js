@@ -43,3 +43,9 @@ window.addEventListener("load", (event) =>
         LoadImages(images, "building");
     }
 );
+
+function displayPaint()
+{
+    const paintFrame = document.getElementById('paintFrame') as HTMLIFrameElement;
+    paintFrame.src = 'https://sagepoweron.github.io/paint/';
+}

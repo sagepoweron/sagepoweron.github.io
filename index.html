@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Jonathan Tate - Software Developer" />
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/cube.css">
         <title>Home</title>
     </head>
 
@@ -39,19 +38,14 @@
                 </div>
             </div>-->
             
-            <div class="panel">
-                <h1>Welcome!</h1>
-                <p>This is my home page. Check out my games below.</p>
-                <div>
-                    <a href="https://sagepoweron.github.io/games/" class="button">Game Development Portfolio</a>
-                </div>
-                <h2>Upcoming Projects</h2>
-                <p>Team Builder is coming soon!</p>
-                <div>
-                    <a href="https://sagepoweron.github.io/teambuilder/" class="button">Team Builder</a>
-                </div>
+            <div class="panel column">
+                <h1>Home</h1>
+                <iframe id="paintFrame" src="https://sagepoweron.github.io/paint/" scrolling="no"></iframe>
+                <!--button id="loadBtn">Load Paint</button-->
+                <p>This is my home page. Check out my games and other projects below.</p>
+                <a href="https://sagepoweron.github.io/games/" class="button">Game Development Portfolio</a>
+                <a href="https://sagepoweron.github.io/teambuilder/" class="button">Team Builder</a>
             </div>
-            
             
             <div class="panel scripture">
                 <p>"I can do all things through Christ who strengthens me" (Philippians 4:13, NKJV)</p>
@@ -69,5 +63,17 @@
                 </div>
             </div>
         </footer>
+
+
+
+
+        <!--script>
+        document.getElementById("loadBtn").addEventListener("click", function () {
+            const iframe = document.getElementById("paintFrame");
+
+            iframe.src = "https://sagepoweron.github.io/paint/"; // Change to your desired URL
+            iframe.style.display = "block"; // Show the iframe
+        });
+        </script-->
     </body>
 </html>
