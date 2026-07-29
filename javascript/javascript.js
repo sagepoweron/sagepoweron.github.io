@@ -46,6 +46,8 @@ window.addEventListener("load", (event) =>
 
 function displayPaint()
 {
-    const paintFrame = document.getElementById('paintFrame') as HTMLIFrameElement;
-    paintFrame.src = 'https://sagepoweron.github.io/paint/';
+    const paintFrame = document.getElementById('paintFrame');
+    if (paintFrame) {
+        paintFrame.src = 'https://sagepoweron.github.io/paint/';
+    }
 }
