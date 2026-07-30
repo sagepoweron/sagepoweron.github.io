@@ -17,11 +17,14 @@ function getRepos()
         {
             const element = data[index];
 
-            if (element.description === "Demo") continue;
+            if (element.description !== "project") continue;
+
+            const listItem = document.createElement("li");
+            reposList.append(listItem);
 
             const container = document.createElement("div");
-            container.classList.add("panel");
-            reposList.append(container);
+            container.classList.add("card");
+            listItem.append(container);
             
             const name = document.createElement("h3");
             name.innerText = `${capitalizeFirstLetter(element.name)}` ;
@@ -32,14 +35,12 @@ function getRepos()
             link.href = element.html_url;
             container.append(link);
 
-            if (element.description !== null)
+            /*if (element.description !== null)
             {
                 const description = document.createElement("p");
                 description.innerText = element.description;
                 container.append(description);
-            }
-
-            
+            }*/
         }
     })
     .catch(error => {

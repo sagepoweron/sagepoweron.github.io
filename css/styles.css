@@ -97,6 +97,9 @@ a
 ul
 {
     padding-inline-start: 0px;
+    list-style-type: none;
+    /*list-style-position: inside;
+    text-align: left;*/
 }
 
 
