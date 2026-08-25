@@ -17,7 +17,7 @@ function getDemos()
         {
             const element = data[index];
 
-            if (element.description !== "Demo") continue;
+            if (element.description.toLowerCase() !== "demo") continue;
 
             const container = document.createElement("div");
             container.classList.add("card");
